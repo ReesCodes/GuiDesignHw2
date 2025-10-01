@@ -1,0 +1,130 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	background-color: #00569f;
+	background-image: url("./ptrbackground.jpg");
+	background-size: contain;
+	background-repeat:repeat-x;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+	min-width: 600px;
+	max-width: 80%;
+	display: block;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	contain:content;
+	align-self: center;
+	margin-left: 10%;
+	padding-top:none;
+	max-height: 800px;
+	overflow: clip;
+	height: min-content;
+}
+
+#wrapper header {
+	background-color: #3399CC;
+	background-image: url("./sunset.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-bottom: 5px solid #000033;
+	color:white;
+	align-self: center;
+	width:100%;
+	float:top;
+	flex-direction: unset;
+	margin-top: none;
+	
+}
+#wrapper header h1 {
+	margin-top: 0;
+}
+
+#content {
+	align-self: right;
+	width: 80%;
+	margin-top: 0;
+	margin-left: 20px;
+	padding-left: 180px;
+	display: block;
+}
+
+#content img {
+	display: inline-block;
+	margin: 10px;
+	margin-left: 0;
+	border: 1px solid #CCCCCC;
+}
+
+/* Make the first paragraph after an image sit inline with the image when space allows */
+#content img,
+#content img + p {
+    display: inline-block; /* allow image and following paragraph to sit side-by-side */
+    vertical-align: top;   /* align tops for a tidy look */
+}
+
+/* Ensure the paragraph next to the image can shrink on small screens */
+#content img + p {
+    max-width: calc(100% - 160px); /* leave room so it wraps reasonably; keeps layout responsive */
+    margin: 10px 0 10px 12px; /* small gap between image and paragraph */
+}
+#content img + p + p {
+	clear: none;          
+	margin-top: 0;        /* remove top margin so it sits close to the preceding paragraph */
+}
+#content ul {
+	display: inline;
+	list-style-image: url("./marker.gif");
+}
+nav {
+	background-color: #4c8aae;
+	display:block;
+	float:left;
+	margin-bottom:auto;
+	padding-right: 20px;
+	height: auto;
+	width: 160px;
+	font-weight: bold;
+	padding-bottom: 100%;
+}
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+}
+nav a {
+	text-decoration: none;
+	color: #02233f;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+.resort {
+	font-weight: bold;
+	color: #1d1dd2;
+	text-align: center;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
